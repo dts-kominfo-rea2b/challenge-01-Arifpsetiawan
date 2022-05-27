@@ -17,14 +17,9 @@ const firstFavoriteRestaurantData = [
 
 const firstFavoriteColorData = ["Yellow", "Pink", "White", "Purple"]
 
-const firstFavoriteRestaurant = new Set()
-while (firstFavoriteRestaurantData.length > 0) {
-  firstFavoriteRestaurant.add(firstFavoriteRestaurantData.shift())
-}
-const firstFavoriteColor = new Set()
-while (firstFavoriteColorData.length > 0) {
-  firstFavoriteColor.add(firstFavoriteColorData.shift())
-}
+const firstFavoriteRestaurant = [...new Set(firstFavoriteRestaurantData)]
+
+const firstFavoriteColor = [...new Set(firstFavoriteColorData)]
 
 const firstUser = {
   name: "Monica",
@@ -66,15 +61,9 @@ const secondFavoriteRestaurantData = [
 
 const secondFavoriteColorData = ["Blue", "Black", "Gray"]
 
-const secondFavoriteRestaurant = new Set()
-while (secondFavoriteRestaurantData.length > 0) {
-  secondFavoriteRestaurant.add(secondFavoriteRestaurantData.shift())
-}
+const secondFavoriteRestaurant = [...new Set(secondFavoriteRestaurantData)]
 
-const secondFavoriteColor = new Set()
-while (secondFavoriteColorData.length > 0) {
-  secondFavoriteColor.add(secondFavoriteColorData.shift())
-}
+const secondFavoriteColor = [...new Set(secondFavoriteColorData)]
 
 const secondUser = {
   name: "Wendy",
