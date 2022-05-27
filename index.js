@@ -28,7 +28,7 @@ const firstUser = {
   email: "monica@dingdong.com",
   favoriteColor: firstFavoriteColor,
   isHavePet: "Yes",
-  education: JSON.stringify([
+  education: [
     {
       name: "SD 01",
       city: "Jakarta",
@@ -43,7 +43,7 @@ const firstUser = {
       name: "SMA 03",
       city: "Tangerang",
     },
-  ]),
+  ],
   favoriteRestaurant: firstFavoriteRestaurant,
 }
 
@@ -72,7 +72,7 @@ const secondUser = {
   email: "wendy@dingdong.com",
   favoriteColor: secondFavoriteColor,
   isHavePet: "No",
-  education: JSON.stringify([
+  education: [
     {
       name: "SD 02",
       city: "Jakarta",
@@ -92,7 +92,7 @@ const secondUser = {
       name: "Universitas Maju",
       city: "Tangerang",
     },
-  ]),
+  ],
   favoriteRestaurant: secondFavoriteRestaurant,
 }
 
